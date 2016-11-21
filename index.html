@@ -85,7 +85,7 @@
       
         <p>Some tips for CSS</p>
 <h2 id="标准CSS盒模型"><a href="#标准CSS盒模型" class="headerlink" title="标准CSS盒模型"></a>标准CSS盒模型</h2><h3 id="盒子模型有两种，分别为标准盒子模型和IE盒子模型，这里我们忽略IE盒子模型，只讲述标准盒子模型，因为浏览器默认情况下会使用自身的怪异模式来解析渲染页面，所以我们在编写网页是，可以在第一行加上一句-lt-DOCTYPE-html-gt-，意识是让浏览器用标准模式解析页面。"><a href="#盒子模型有两种，分别为标准盒子模型和IE盒子模型，这里我们忽略IE盒子模型，只讲述标准盒子模型，因为浏览器默认情况下会使用自身的怪异模式来解析渲染页面，所以我们在编写网页是，可以在第一行加上一句-lt-DOCTYPE-html-gt-，意识是让浏览器用标准模式解析页面。" class="headerlink" title="盒子模型有两种，分别为标准盒子模型和IE盒子模型，这里我们忽略IE盒子模型，只讲述标准盒子模型，因为浏览器默认情况下会使用自身的怪异模式来解析渲染页面，所以我们在编写网页是，可以在第一行加上一句&lt;!DOCTYPE html&gt;，意识是让浏览器用标准模式解析页面。"></a>盒子模型有两种，分别为标准盒子模型和IE盒子模型，这里我们忽略IE盒子模型，只讲述标准盒子模型，因为浏览器默认情况下会使用自身的怪异模式来解析渲染页面，所以我们在编写网页是，可以在第一行加上一句&lt;!DOCTYPE html&gt;，意识是让浏览器用标准模式解析页面。</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="下面正式开始介绍css标准盒模型。"><a href="#下面正式开始介绍css标准盒模型。" class="headerlink" title="下面正式开始介绍css标准盒模型。"></a>下面正式开始介绍css标准盒模型。</h3><p><img src="css_model.gif" alt=""></p>
+<h3 id="下面正式开始介绍css标准盒模型。"><a href="#下面正式开始介绍css标准盒模型。" class="headerlink" title="下面正式开始介绍css标准盒模型。"></a>下面正式开始介绍css标准盒模型。</h3><p><img src="css_model.gif"></p>
 <h3 id="所有构造器或者函数的proto都指向Function-prototype-它是一个空函数-Function-prototype除外，Function-prototype指向Object-potytype"><a href="#所有构造器或者函数的proto都指向Function-prototype-它是一个空函数-Function-prototype除外，Function-prototype指向Object-potytype" class="headerlink" title="所有构造器或者函数的proto都指向Function.prototype,它是一个空函数(Function.prototype除外，Function.prototype指向Object.potytype)"></a>所有构造器或者函数的<strong>proto</strong>都指向Function.prototype,它是一个空函数(Function.prototype除外，Function.prototype指向Object.potytype)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ Number.__proto__===Function.prototype    //true</div><div class="line">$ String.__proto__===Function.prototype    //true</div><div class="line">$ Boolean.__proto__===Function.prototype    //true</div><div class="line">$ Object.__proto__===Function.prototype    //true</div><div class="line">$ Function.__proto__===Function.prototype    //true</div><div class="line">$ Array.__proto__===Function.prototype    //true</div><div class="line">$ RegExp.__proto__===Function.prototype    //true</div><div class="line">$ Error.__proto__===Function.prototype    //true</div><div class="line">$ Data.__proto__===Function.prototype    //true</div></pre></td></tr></table></figure>
 <p>More info: <a href="www.cnblogs.com/snandy/archive/2012/09/01/2664134.html">Article</a></p>
 <h2 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h2><h3 id="一个对象的constructor属性指的是它的构造函数的prototype-constructor-一般情况下，每个函数都有protoype这个东西，这个东西是个对象，它包含一个constructor属性，指向的就是函数自己。js的本意应该是让每个对象的constructor都指向自己的构造函数，但是这个本意却可以被人们肆意的修改。"><a href="#一个对象的constructor属性指的是它的构造函数的prototype-constructor-一般情况下，每个函数都有protoype这个东西，这个东西是个对象，它包含一个constructor属性，指向的就是函数自己。js的本意应该是让每个对象的constructor都指向自己的构造函数，但是这个本意却可以被人们肆意的修改。" class="headerlink" title="一个对象的constructor属性指的是它的构造函数的prototype.constructor,一般情况下，每个函数都有protoype这个东西，这个东西是个对象，它包含一个constructor属性，指向的就是函数自己。js的本意应该是让每个对象的constructor都指向自己的构造函数，但是这个本意却可以被人们肆意的修改。"></a>一个对象的constructor属性指的是它的构造函数的prototype.constructor,一般情况下，每个函数都有protoype这个东西，这个东西是个对象，它包含一个constructor属性，指向的就是函数自己。js的本意应该是让每个对象的constructor都指向自己的构造函数，但是这个本意却可以被人们肆意的修改。</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function Box()&#123;</div><div class="line">	this.name="sjc";</div><div class="line">&#125;</div><div class="line">Box.prototype.getname=function()&#123;</div><div class="line">	alert(this.name);</div><div class="line">&#125;</div><div class="line">var box1=new Box();</div><div class="line">alert(box1.constructor===Box)               //true</div><div class="line">alert(Box.constructor===Function)           //true</div></pre></td></tr></table></figure>
@@ -95,7 +95,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/21/css_box/" data-id="civrq1bk70000eguz51ebol2w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/21/css_box/" data-id="civrq9nwu0000bsuzimjxbwde" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/20/js/" data-id="civrq1bkh0002eguz5umabt7e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/20/js/" data-id="civrq9nx30002bsuzyvz9qqcg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -166,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/20/funny/" data-id="civrq1bke0001eguzg0f377y7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/11/20/funny/" data-id="civrq9nx00001bsuziusc0ndm" class="article-share-link">Share</a>
       
       
     </footer>
