@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Archives: 2016 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/public/archives/2016/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -167,38 +167,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-JavaScript/js" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/07/18/JavaScript/js/" class="archive-article-date">
+  	<time datetime="2016-07-18T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-18</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/18/JavaScript/js/">JavaScript之原型</a>
+      <a class="archive-article-title" href="/2016/07/18/JavaScript/js/">JavaScript之原型</a>
     </h1>
   
 
-        
-        <a href="/2016/07/18/JavaScript/js/" class="archive-article-date">
-  	<time datetime="2016-07-18T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Some tips for javascript</p>
-<h2 id="proto-amp-amp-prototype"><a href="#proto-amp-amp-prototype" class="headerlink" title="proto &amp;&amp; prototype"></a><strong>proto</strong> &amp;&amp; prototype</h2><h3 id="&#x4EFB;&#x4F55;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x548C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x90FD;&#x5177;&#x6709;proto&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x5B83;&#x4E0A;&#x5C42;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x5373;prototype&#xFF0C;&#x4F46;&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x662F;&#x6CA1;&#x6709;prototype&#x5C5E;&#x6027;&#x7684;-&#x53EA;&#x6709;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;pototype&#x90FD;&#x662F;Object-&#x9664;&#x4E86;Function-prototype-&#x5B83;&#x662F;function"><a href="#&#x4EFB;&#x4F55;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x548C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x90FD;&#x5177;&#x6709;proto&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x5B83;&#x4E0A;&#x5C42;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x5373;prototype&#xFF0C;&#x4F46;&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x662F;&#x6CA1;&#x6709;prototype&#x5C5E;&#x6027;&#x7684;-&#x53EA;&#x6709;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;pototype&#x90FD;&#x662F;Object-&#x9664;&#x4E86;Function-prototype-&#x5B83;&#x662F;function" class="headerlink" title="&#x4EFB;&#x4F55;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x548C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x90FD;&#x5177;&#x6709;proto&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x5B83;&#x4E0A;&#x5C42;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x5373;prototype&#xFF0C;&#x4F46;&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x662F;&#x6CA1;&#x6709;prototype&#x5C5E;&#x6027;&#x7684;,&#x53EA;&#x6709;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;pototype&#x90FD;&#x662F;Object(&#x9664;&#x4E86;Function.prototype,&#x5B83;&#x662F;function)"></a>&#x4EFB;&#x4F55;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x548C;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x90FD;&#x5177;&#x6709;<strong>proto</strong>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x6307;&#x5411;&#x5B83;&#x4E0A;&#x5C42;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x5373;prototype&#xFF0C;&#x4F46;&#x662F;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x662F;&#x6CA1;&#x6709;prototype&#x5C5E;&#x6027;&#x7684;,&#x53EA;&#x6709;&#x51FD;&#x6570;&#x5BF9;&#x8C61;&#x624D;&#x4F1A;&#x6709;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x6709;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;pototype&#x90FD;&#x662F;Object(&#x9664;&#x4E86;Function.prototype,&#x5B83;&#x662F;function)</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Box(){}</div><div class="line">var box1=new Box();</div><div class="line">box1.__proto__===Box.prototype           //true</div><div class="line">box1.prototype                           //undifned</div><div class="line">Box.prototype              //Object{constructor:function Box(),__proto__:Object}</div><div class="line">box1.__proto__proto__===Object.prototype    //true</div><div class="line">box1.__proto__proto__proto__===null         //true  &#x5230;&#x5934;&#x4E86;</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/07/18/JavaScript/js/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -210,7 +206,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -223,58 +219,31 @@
 	</div>
 
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/18/JavaScript/js/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
   
-    <article id="post-CSS/css_float" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/07/17/CSS/css_float/" class="archive-article-date">
+  	<time datetime="2016-07-17T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-17</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/17/CSS/css_float/">CSS浮动</a>
+      <a class="archive-article-title" href="/2016/07/17/CSS/css_float/">CSS浮动</a>
     </h1>
   
 
-        
-        <a href="/2016/07/17/CSS/css_float/" class="archive-article-date">
-  	<time datetime="2016-07-17T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>some tips for css&#x6D6E;&#x52A8;</p>
-<h3 id="&#x5B66;&#x4E60;css&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;float&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x7F51;&#x4E0A;&#x6709;&#x4E0D;&#x5C11;&#x5173;&#x4E8E;&#x5B83;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x6BD4;&#x5982;&#x5B83;&#x8BA9;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x8FD0;&#x7528;float&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x5404;&#x79CD;bug&#xFF0C;&#x4F46;&#x5F88;&#x5C11;&#x6709;&#x4EBA;&#x628A;&#x5176;&#x4E2D;&#x5177;&#x4F53;&#x7684;&#x539F;&#x7406;&#x8BF4;&#x6E05;&#x695A;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x67E5;&#x627E;&#x4E86;&#x4E0D;&#x5C11;&#x8D44;&#x6599;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x6765;&#x65B9;&#x4FBF;&#x540E;&#x6765;&#x7684;&#x5B66;&#x4E60;&#x3002;"><a href="#&#x5B66;&#x4E60;css&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;float&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x7F51;&#x4E0A;&#x6709;&#x4E0D;&#x5C11;&#x5173;&#x4E8E;&#x5B83;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x6BD4;&#x5982;&#x5B83;&#x8BA9;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x8FD0;&#x7528;float&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x5404;&#x79CD;bug&#xFF0C;&#x4F46;&#x5F88;&#x5C11;&#x6709;&#x4EBA;&#x628A;&#x5176;&#x4E2D;&#x5177;&#x4F53;&#x7684;&#x539F;&#x7406;&#x8BF4;&#x6E05;&#x695A;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x67E5;&#x627E;&#x4E86;&#x4E0D;&#x5C11;&#x8D44;&#x6599;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x6765;&#x65B9;&#x4FBF;&#x540E;&#x6765;&#x7684;&#x5B66;&#x4E60;&#x3002;" class="headerlink" title="&#x5B66;&#x4E60;css&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;float&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x7F51;&#x4E0A;&#x6709;&#x4E0D;&#x5C11;&#x5173;&#x4E8E;&#x5B83;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x6BD4;&#x5982;&#x5B83;&#x8BA9;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x8FD0;&#x7528;float&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x5404;&#x79CD;bug&#xFF0C;&#x4F46;&#x5F88;&#x5C11;&#x6709;&#x4EBA;&#x628A;&#x5176;&#x4E2D;&#x5177;&#x4F53;&#x7684;&#x539F;&#x7406;&#x8BF4;&#x6E05;&#x695A;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x67E5;&#x627E;&#x4E86;&#x4E0D;&#x5C11;&#x8D44;&#x6599;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x6765;&#x65B9;&#x4FBF;&#x540E;&#x6765;&#x7684;&#x5B66;&#x4E60;&#x3002;"></a>&#x5B66;&#x4E60;css&#x80AF;&#x5B9A;&#x4F1A;&#x9047;&#x5230;float&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#xFF0C;&#x7F51;&#x4E0A;&#x6709;&#x4E0D;&#x5C11;&#x5173;&#x4E8E;&#x5B83;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x6BD4;&#x5982;&#x5B83;&#x8BA9;&#x5143;&#x7D20;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x8FD0;&#x7528;float&#x65F6;&#x4F1A;&#x9047;&#x5230;&#x5404;&#x79CD;bug&#xFF0C;&#x4F46;&#x5F88;&#x5C11;&#x6709;&#x4EBA;&#x628A;&#x5176;&#x4E2D;&#x5177;&#x4F53;&#x7684;&#x539F;&#x7406;&#x8BF4;&#x6E05;&#x695A;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x67E5;&#x627E;&#x4E86;&#x4E0D;&#x5C11;&#x8D44;&#x6599;&#xFF0C;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x6765;&#x65B9;&#x4FBF;&#x540E;&#x6765;&#x7684;&#x5B66;&#x4E60;&#x3002;</h3><h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;float"><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;float" class="headerlink" title="&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;float"></a>&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;float</h2>
-        
-          <a class="article-more-a" href="/2016/07/17/CSS/css_float/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -286,7 +255,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -299,58 +268,31 @@
 	</div>
 
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/17/CSS/css_float/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
   
-    <article id="post-CSS/css_box" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/07/16/CSS/css_box/" class="archive-article-date">
+  	<time datetime="2016-07-16T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-16</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/16/CSS/css_box/">CSS盒模型</a>
+      <a class="archive-article-title" href="/2016/07/16/CSS/css_box/">CSS盒模型</a>
     </h1>
   
 
-        
-        <a href="/2016/07/16/CSS/css_box/" class="archive-article-date">
-  	<time datetime="2016-07-16T07:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Some tips for CSS</p>
-<h2 id="&#x6807;&#x51C6;CSS&#x76D2;&#x6A21;&#x578B;"><a href="#&#x6807;&#x51C6;CSS&#x76D2;&#x6A21;&#x578B;" class="headerlink" title="&#x6807;&#x51C6;CSS&#x76D2;&#x6A21;&#x578B;"></a>&#x6807;&#x51C6;CSS&#x76D2;&#x6A21;&#x578B;</h2><h3 id="&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x548C;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5FFD;&#x7565;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x53EA;&#x8BB2;&#x8FF0;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x4F7F;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x602A;&#x5F02;&#x6A21;&#x5F0F;&#x6765;&#x89E3;&#x6790;&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x7F51;&#x9875;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E00;&#x53E5;-lt-DOCTYPE-html-gt-&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x7528;&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x89E3;&#x6790;&#x9875;&#x9762;&#x3002;"><a href="#&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x548C;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5FFD;&#x7565;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x53EA;&#x8BB2;&#x8FF0;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x4F7F;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x602A;&#x5F02;&#x6A21;&#x5F0F;&#x6765;&#x89E3;&#x6790;&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x7F51;&#x9875;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E00;&#x53E5;-lt-DOCTYPE-html-gt-&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x7528;&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x89E3;&#x6790;&#x9875;&#x9762;&#x3002;" class="headerlink" title="&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x548C;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5FFD;&#x7565;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x53EA;&#x8BB2;&#x8FF0;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x4F7F;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x602A;&#x5F02;&#x6A21;&#x5F0F;&#x6765;&#x89E3;&#x6790;&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x7F51;&#x9875;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E00;&#x53E5;&lt;!DOCTYPE html&gt;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x7528;&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x89E3;&#x6790;&#x9875;&#x9762;&#x3002;"></a>&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x548C;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5FFD;&#x7565;IE&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x53EA;&#x8BB2;&#x8FF0;&#x6807;&#x51C6;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x4F7F;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x602A;&#x5F02;&#x6A21;&#x5F0F;&#x6765;&#x89E3;&#x6790;&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x7F51;&#x9875;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#x52A0;&#x4E0A;&#x4E00;&#x53E5;&lt;!DOCTYPE html&gt;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x7528;&#x6807;&#x51C6;&#x6A21;&#x5F0F;&#x89E3;&#x6790;&#x9875;&#x9762;&#x3002;</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/07/16/CSS/css_box/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -362,7 +304,7 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -375,27 +317,17 @@
 	</div>
 
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/16/CSS/css_box/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -417,9 +349,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
